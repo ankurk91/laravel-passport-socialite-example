@@ -13,7 +13,8 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        //
+        \Laravel\Passport\Exceptions\OAuthServerException::class,
+        \League\OAuth2\Server\Exception\OAuthServerException::class,
     ];
 
     /**
