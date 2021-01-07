@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "f28e878f-a8b9-462d-8900-cdaebba577ba",
+		"name": "Laravel Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login with GitHub",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "1dvxrJwoSD287sqsxJENNSh2hglXivbyqRbTPNU2",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "social",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "github",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "891fef4e339387e5defb32b516279f60573fcd6d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
